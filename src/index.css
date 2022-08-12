@@ -31,3 +31,8 @@ body {
   font-weight: 400;
   font-family: Poppins;
 }
+
+section {
+  margin: 8rem;
+  height: 100hv;
+}

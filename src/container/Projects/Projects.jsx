@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.scss";
 const Projects = () => {
-  return <div>Projects</div>;
+  return <section id="projects">Projects</section>;
 };
 
 export { Projects };

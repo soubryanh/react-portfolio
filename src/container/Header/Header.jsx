@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 const Header = () => {
-  return <div>Header</div>;
+  return <section id="header">Header</section>;
 };
 
 export { Header };
