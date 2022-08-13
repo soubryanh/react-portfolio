@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+
 :root {
   --bg-clr: #102432;
   --bg-light-color: #152f40;
@@ -12,6 +14,11 @@
   /*========== Font and typography ==========*/
   --body-font: "Quicksand", sans-serif;
   --normal-font-size: 1rem;
+  /* Box sizing */
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --transition: all 400ms ease;
 }
 /* reset default styles */
 *,
@@ -20,19 +27,47 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  background-color: var(--bg-clr);
+  background: var(--bg-clr);
   color: var(--text-clr);
   font-size: 100%;
   font-weight: 400;
   font-family: Poppins;
+  line-height: 1.6;
+  background-image: url(./assets/bg-texture.png);
+}
+/* General styles */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 2.5rem;
+}
+section {
+  margin-top: 8rem;
+  /* height: 100hv; */
 }
 
-section {
-  margin: 8rem;
-  height: 100hv;
+.text-light {
+  color: var(--text-clr);
+}
+a {
+  color: var(--first-color);
+  transition: var(--transition);
 }
