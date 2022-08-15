@@ -8,7 +8,7 @@ import {
   Projects,
   Contact,
 } from "./container";
-import { Navbar } from "./components";
+import { Navbar } from "./components/";
 import "./App.scss";
 
 const App = () => (
