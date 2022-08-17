@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
-// import { AppWrap } from "../../wrapper";
+import { AppWrap } from "../../wrapper";
 import "./Header.scss";
 
 const scaleVariants = {
@@ -16,7 +16,7 @@ const scaleVariants = {
 };
 
 const Header = () => (
-  <div id="header" className="app__header app_flex">
+  <section id="#home" className="app__header app_flex">
     <motion.div
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.5 }}
@@ -63,8 +63,8 @@ const Header = () => (
         </div>
       ))}
     </motion.div>
-  </div>
+  </section>
 );
 
-export { Header };
-// export default AppWrap(Header, "home");
+// export { Header };
+export default AppWrap(Header, "header");

@@ -14,13 +14,13 @@
   /* master codigo */
   /* --font-base: "DM Sans", sans-serif; */
 
-  --primary-color: #edf2f8;
-  --secondary-color: #313bac;
+  --primary-color: #152f40;
+  --secondary-color: #ffda17;
   --black-color: #ffffff;
   --lightGray-color: #e4e4e4;
   --gray-color: #ffffff;
   --brown-color: #46364a;
-  --white-color: #ffffff;
+  --white-color: #152f40;
 }
 
 /* reset default styles */
@@ -43,7 +43,7 @@ body {
   background-image: url(./assets/bg-texture.png);
 }
 /* General styles */
-/* .container {
+.container {
   width: var(--container-width-lg);
   margin: 0 auto;
-} */
+}
