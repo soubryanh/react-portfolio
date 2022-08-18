@@ -1,9 +1,9 @@
 import Header from "./Header/Header";
 import About from "./About/About";
+import Projects from "./Projects/Projects";
 
 export { Technologies } from "./Technologies/Technologies";
 export { Footer } from "./Footer/Footer";
-export { Projects } from "./Projects/Projects";
 export { Contact } from "./Contact/Contact";
 
-export { Header, About };
+export { Header, About, Projects };

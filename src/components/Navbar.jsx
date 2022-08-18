@@ -5,7 +5,6 @@ import { GiTreehouse } from "react-icons/gi";
 import { RiPlantFill } from "react-icons/ri";
 import { GiTalk } from "react-icons/gi";
 import { TbTools } from "react-icons/tb";
-// import { useState } from "react";
 
 const Navbar = () => {
   const [activeNav, setActiveNav] = React.useState("#");
