@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./About.scss";
 import { urlFor, client } from "../../client";
 import { AppWrap } from "../../wrapper";
+// import { Loader } from "react-loaders";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -41,6 +42,7 @@ const About = () => {
         ))}
       </div>
       <section id="about"></section>
+      {/* <Loader type="pacman" /> */}
     </>
   );
 };

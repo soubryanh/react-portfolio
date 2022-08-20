@@ -1,10 +1,9 @@
 import React from "react";
-import { AiFillEye, AiFillGithub, AiFillIdcard } from "react-icons/ai";
+import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Projects.scss";
-import { TbUserX } from "react-icons/tb";
 
 const Projects = () => {
   const [filter, setFilter] = React.useState("All");
@@ -71,7 +70,7 @@ const Projects = () => {
                 }}
                 className="app__work-hover app__flex"
               >
-                <a href={work.projectLink} target="_blank" rel="noreferre">
+                <a href={work.projectLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}
@@ -81,7 +80,7 @@ const Projects = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
-                <a href={work.projectLink} target="_blank" rel="noreferre">
+                <a href={work.projectLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.9] }}
@@ -96,7 +95,6 @@ const Projects = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text"> {work.title} </h4>
               <p className="p-text" style={{ marginTop: 10 }}>
-                {" "}
                 {work.description}
               </p>
               <div className="app__work-tag app__flex">

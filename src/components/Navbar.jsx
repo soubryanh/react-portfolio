@@ -15,8 +15,8 @@ const Navbar = () => {
       <div className="social__content">
         <a
           href="#"
-          onClick={() => setActiveNav("#")}
-          className={activeNav === "#" ? "active" : ""}
+          onClick={() => setActiveNav("#home")}
+          className={activeNav === "#home" ? "active" : ""}
         >
           <GiTreehouse />
         </a>
