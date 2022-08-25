@@ -6,6 +6,7 @@ import sass from "../assets/sass.png";
 import about0 from "../assets/about0.jpg";
 import about02 from "../assets/about02.gif";
 import about03 from "../assets/about03.gif";
+import image from "../assets/image.png";
 
 const images = {
   profile,
@@ -16,6 +17,7 @@ const images = {
   about0,
   about02,
   about03,
+  image,
 };
 
 export { images };

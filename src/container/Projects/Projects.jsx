@@ -33,12 +33,12 @@ const Projects = () => {
   return (
     <section id="projects">
       <h2 className="head-text">
-        My Creative
-        <span> Portfolio </span>
+        🪄Creative
+        <span> Projects </span>
         section
       </h2>
       <div className="app__work-filter">
-        {["UI/ UX", "TbUserX", "web app", "mobile App", "ReactJS", "All"].map(
+        {["All", "UI/ UX", "Web App", "Mobile App", "ReactJS"].map(
           (item, index) => (
             <div
               key={index}

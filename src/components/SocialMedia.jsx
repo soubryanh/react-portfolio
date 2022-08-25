@@ -1,17 +1,28 @@
 import React from "react";
-import { BsTwitter, BsInstagram, BsGithub } from "react-icons/bs";
+import { BsTwitter, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const SocialMedia = () => {
   return (
     <div className="app__social">
       <div>
-        <BsGithub />
+        <a href="https://github.com/soubryanh" target="_blank">
+          <BsGithub />
+        </a>
       </div>
       <div>
-        <BsTwitter />
+        <a href="https://www.linkedin.com/in/bryanhernandz/" target="_blank">
+          <BsLinkedin />
+        </a>
       </div>
       <div>
-        <BsInstagram />
+        <a href="https://twitter.com/soubryanh" target="_blank">
+          <BsTwitter />
+        </a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/soubryanh/" target="_blank">
+          <BsInstagram />
+        </a>
       </div>
     </div>
   );

@@ -17,10 +17,10 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I know That
+        I know that
         <span> Good Development </span>
         means
-        <span> Good bussiness </span>
+        <span> Good Bussiness </span>
       </h2>
       <div className="app__profiles">
         {abouts.map((about, index) => (

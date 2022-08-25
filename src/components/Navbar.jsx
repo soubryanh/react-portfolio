@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav>
       <div className="social__content">
         <a
-          href="#"
+          href="# "
           onClick={() => setActiveNav("#home")}
           className={activeNav === "#home" ? "active" : ""}
         >

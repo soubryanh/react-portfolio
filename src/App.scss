@@ -114,11 +114,12 @@
 
   padding: 0.5rem;
 
-  div {
+  div a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background: transparent;
+    // background-color: var(--white-color);
     margin: 0.25rem 0;
     // border: 1px solid var(--lightGray-color);
 
@@ -129,8 +130,8 @@
     transition: all 0.3s ease-in-out;
 
     svg {
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       color: var(--secondary-color);
     }
 

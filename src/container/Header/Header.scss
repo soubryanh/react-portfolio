@@ -53,13 +53,17 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
-    box-shadow: 0px 0px 20px rgba($color: #ffff, $alpha: 0.2);
+    box-shadow: 0px 0px 17px rgba($color: #ffff, $alpha: 0.2);
   }
   .tag-cmp {
     flex-direction: column;
     margin-top: 1rem;
+    font-family: Quicksand;
+
     p {
       width: 100%;
+      font-size: 1rem;
+
       // text-transform: uppercase;
       text-align: right;
     }
@@ -92,7 +96,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // backdrop-filter: blur(15px);
     box-shadow: 0 0 20px rgba($color: #ffff, $alpha: 0.2);
 
     img {

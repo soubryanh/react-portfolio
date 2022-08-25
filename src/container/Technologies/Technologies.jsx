@@ -7,7 +7,7 @@ import { urlFor, client } from "../../client";
 // import { GiSkills } from "react-icons/gi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faAngular,
+  faSass,
   faCss3,
   faGitAlt,
   faHtml5,
@@ -48,7 +48,7 @@ const Technologies = () => {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faSass} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
