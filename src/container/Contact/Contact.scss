@@ -71,7 +71,7 @@
   width: 60%;
   flex-direction: column;
   margin: 1rem 2rem;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -82,8 +82,7 @@
     border-radius: 10px;
     cursor: pointer;
     background-color: transparent;
-    box-shadow: 1px 5px 1px rgba($color: #ffff, $alpha: 0.3);
-
+    box-shadow: 1px 5px 1px rgba($color: #fdda26, $alpha: 0.3);
     transition: all 0.3s ease-in-out;
 
     input,
@@ -105,26 +104,27 @@
     }
 
     &:hover {
-      box-shadow: 0 0 10px #fff;
+      box-shadow: 1px 5px 1px #25516e;
     }
   }
 
   button {
     padding: 1rem 2rem;
     border-radius: 10px;
-    border: none;
-    background-color: #ffda17;
+    font-weight: bold;
 
-    font-weight: 500;
-    color: #fff;
+    display: flex;
+    flex-direction: row;
+
+    border: none;
+    background: linear-gradient(360deg, #fdda26 0%, #ffc72c 35%, #febe10 100%);
+    color: #000;
     outline: none;
     margin: 2rem 0 0 0;
-
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     cursor: pointer;
-
     &:hover {
-      background-color: #2430af;
+      box-shadow: 0px 0px 25px rgba($color: #febe10, $alpha: 0.2);
     }
   }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { client } from "../../client";
 import { AppWrap } from "../../wrapper";
-import { images } from "../../constants";
+// import { images } from "../../constants";
 
 import "./Contact.scss";
 
@@ -49,7 +49,7 @@ const Footer = () => {
             <input
               className="p-text"
               type="text"
-              placeholder="Your Name"
+              placeholder="How can I call you? 😊 - Name"
               name="username"
               value={username}
               onChange={handleChangeInput}
@@ -59,7 +59,7 @@ const Footer = () => {
             <input
               className="p-text"
               type="email"
-              placeholder="Your Email"
+              placeholder="Email please 📧"
               name="email"
               value={email}
               onChange={handleChangeInput}
@@ -68,7 +68,7 @@ const Footer = () => {
           <div>
             <textarea
               className="p-text"
-              placeholder="Your Message"
+              placeholder="Write your message"
               value={message}
               name="message"
               onChange={handleChangeInput}
@@ -88,9 +88,3 @@ const Footer = () => {
 };
 
 export default AppWrap(Footer, "app__footer");
-
-// const Contact = () => {
-//   return <section id="contact">Contact</section>;
-// };
-
-// export { Contact };
