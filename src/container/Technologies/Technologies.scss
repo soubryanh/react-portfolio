@@ -80,8 +80,12 @@
 .stage-cube-cont {
   padding-top: 15%;
   margin-bottom: 50%;
-}
 
+  @media screen and (max-width: 500px) {
+    padding-top: 30%;
+    margin-bottom: 110%;
+  }
+}
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
