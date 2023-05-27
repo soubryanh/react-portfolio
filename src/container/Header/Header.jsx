@@ -1,8 +1,8 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { images } from "../../constants";
-import { AppWrap } from "../../wrapper";
-import "./Header.scss";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { images } from '../../constants';
+import { AppWrap } from '../../wrapper';
+import './Header.scss';
 
 const scaleVariants = {
   whileInView: {
@@ -10,7 +10,7 @@ const scaleVariants = {
     opacity: [0, 1],
     transition: {
       duration: 1,
-      ease: "easeInOut",
+      ease: 'easeInOut',
     },
   },
 };
@@ -18,50 +18,51 @@ const scaleVariants = {
 const Header = () => {
   return (
     <>
-      <section id="#home" className="app__header app_flex">
+      <section id='#home' className='app__header app_flex'>
         <motion.div
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5 }}
-          className="app__header-info"
+          className='app__header-info'
         >
-          <div className="app__header-badge">
-            <div className="badge-cmp app__flex">
+          <div className='app__header-badge'>
+            <div className='badge-cmp app__flex'>
               <span>🧑🏽‍🚀</span>
               <div style={{ marginLeft: 20 }}>
-                <p className="p-text">Hi there!👋🏻 This is</p>
-                <h1 className="head-text">Bryan</h1>
+                <p className='p-text'>Hi there!👋🏻 This is</p>
+                <h1 className='head-text'>Bryan</h1>
               </div>
             </div>
-            <div className="tag-cmp app__flex">
-              <p className="p-text">Frontend Developer</p>
-              <p className="p-text">⚛️React Developer</p>
+            <div className='tag-cmp app__flex'>
+              <p className='p-text'>Frontend Developer</p>
+              <p className='p-text'>⚛️React Developer</p>
+              <p className='p-text'>🤖AI Enthusiast</p>
             </div>
           </div>
         </motion.div>
         <motion.div
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
-          className="app__header-img"
+          className='app__header-img'
         >
-          <img src={images.profile} alt="profile_bg" />
+          <img src={images.profile} alt='profile_bg' />
           <motion.img
             whileInView={{
               scale: [0, 1],
             }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-            className="overlay_circle"
+            transition={{ duration: 1, ease: 'easeInOut' }}
+            className='overlay_circle'
             src={images.circle}
-            alt="profile_circle"
+            alt='profile_circle'
           />
         </motion.div>
         <motion.div
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
-          className="app__header-circles"
+          className='app__header-circles'
         >
           {[images.git, images.react, images.sass].map((circle, index) => (
-            <div className="circle-cmp app__flex" key={`circle-${index}`}>
-              <img src={circle} alt="profile-bg" />
+            <div className='circle-cmp app__flex' key={`circle-${index}`}>
+              <img src={circle} alt='profile-bg' />
             </div>
           ))}
         </motion.div>
@@ -71,4 +72,4 @@ const Header = () => {
 };
 
 // export { Header };
-export default AppWrap(Header, "header");
+export default AppWrap(Header, 'header');
